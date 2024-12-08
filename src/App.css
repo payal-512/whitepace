@@ -1,0 +1,353 @@
+:root {
+  --theme-primary: #4F9CF9;
+  --theme-secondary: #FFE492;
+  --theme-white: #ffffff;
+  --theme-black: #000000;
+  --theme-gray: #9F9F9F;
+  --theme-dark: #212529;
+  --theme-blue: #043873;
+  --theme-primary-font: "Inter", sans-serif;
+  --theme-body-primary-font-family: var(--theme-primary-font);
+}
+
+.App {
+  text-align: center;
+}
+
+body {
+  font-family: var(--theme-primary-font);
+  font-weight: 400;
+  color: var(--theme-dark);
+}
+
+.container {
+  max-width: 1480px;
+}
+
+.dropdown .dropdown-toggle::after {
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.navbar-nav .dropdown-menu {
+  background-color: var(--theme-white);
+}
+
+.navbar-nav .dropdown-menu .dropdown-item {
+  color: var(--theme-blue);
+}
+
+p {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.bottom-shape::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -4px;
+  z-index: -1;
+  width: 100%;
+  height: 30px;
+  background: url("./assets/images/title-bottom-shape.svg") no-repeat right bottom;
+  background-size: contain;
+}
+
+header .navbar {
+  background-color: var(--theme-blue);
+}
+
+header .navbar .nav-link {
+  color: var(--theme-white);
+}
+
+.btn {
+  padding: 18px 24px;
+  border-radius: 8px;
+}
+
+.btn-primary {
+  background-color: var(--theme-primary);
+  border-color: var(--theme-primary);
+}
+
+.btn-primary:hover,
+.btn-primary:active {
+  background-color: transparent !important;
+  border-color: var(--theme-primary) !important;
+  color: var(--theme-white) !important;
+}
+
+.btn-secondary {
+  background-color: var(--theme-secondary);
+  border-color: var(--theme-secondary);
+  color: var(--theme-blue);
+}
+
+.btn-secondary:hover,
+.btn-secondary:active {
+  background-color: transparent !important;
+  border-color: var(--theme-secondary) !important;
+  color: var(--theme-secondary) !important;
+}
+
+.btn-outline-secondary {
+  border-color: var(--theme-secondary);
+  color: var(--theme-dark);
+}
+
+.btn-outline-secondary:hover,
+.btn-outline-secondary:active {
+  background-color: var(--theme-secondary) !important;
+  border-color: var(--theme-secondary) !important;
+  color: var(--theme-blue) !important;
+}
+
+.bg-blue {
+  background-color: var(--theme-blue);
+}
+
+.section-title {
+  font-size: 72px;
+  font-weight: 700;
+  display: inline-block;
+}
+
+.hero-section {
+  background-color: var(--theme-blue);
+  padding: 120px 0;
+}
+
+.hero-section .hero-title {
+  font-size: 64px;
+  font-weight: 700;
+}
+
+.hero-section::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../src/assets/images/hero-shape.svg") no-repeat center center;
+  background-size: cover;
+  opacity: 0.5;
+}
+
+.choose-plan-section {
+  padding: 140px 0;
+}
+
+.choose-plan-row {
+  margin-top: 60px;
+}
+
+.choose-plan-text {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.choose-plan-card.card {
+  border-color: var(--theme-secondary);
+  border-radius: 10px;
+}
+
+.choose-plan-card .card-body {
+  padding: 40px 44px;
+}
+
+.choose-plan-card .card-subtitle {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.choose-plan-card .plan-list li {
+  padding-left: 36px;
+  position: relative;
+  margin-bottom: 26px;
+}
+
+.choose-plan-card .true-round-icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.choose-plan-row .slick-slide {
+  padding: 0 16px;
+}
+
+.choose-plan-row.slick-dots li {
+  margin: 0;
+}
+
+.choose-plan-row .slick-list {
+  padding-bottom: 40px;
+}
+
+.choose-plan-row .slick-dots li.slick-active button:before {
+  opacity: 1;
+  color: var(--theme-blue);
+}
+
+.choose-plan-row .slick-dots li button:before {
+  opacity: 1;
+  color: var(--theme-primary);
+  font-size: 10px;
+}
+
+.plan-highlighted {
+  background-color: var(--theme-blue);
+}
+
+.plan-highlighted.card {
+  border-color: var(--theme-blue);
+}
+
+.plan-highlighted .card-subtitle {
+  color: var(--theme-secondary);
+}
+
+.plan-highlighted .true-round-icon svg path {
+  stroke: var(--theme-secondary);
+}
+
+.plan-highlighted .card-body {
+  padding: 80px 44px;
+}
+
+.try-whitepace-section {
+  padding: 140px 0;
+}
+
+footer {
+  padding-bottom: 32px;
+  margin-top: -1px;
+}
+
+.footer-text {
+  font-weight: 300;
+  max-width: 250px;
+}
+
+footer .footer-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+footer .footer-lists li a {
+  color: var(--theme-white);
+  text-decoration: none;
+  margin-bottom: 15px;
+  font-weight: 300;
+  display: inline-block;
+  line-height: 16px;
+}
+
+footer .footer-lists li p {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+footer .footer-lists li a:hover {
+  color: var(--theme-secondary);
+}
+
+footer .try-today-title {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+footer .try-today-text {
+  font-size: 16px;
+  font-weight: 300;
+  max-width: 250px;
+}
+
+.bottom-footer {
+  border-top: 1px solid #2E4E73;
+  padding-top: 32px;
+  width: calc(100% - 16px);
+  margin: auto;
+}
+
+@media screen and (min-width: 992px) {
+  header .dropdown .dropdown-toggle::after {
+    margin-right: 20px;
+    position: relative;
+    right: -12px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  header .dropdown .dropdown-toggle::after {
+    position: absolute;
+    right: 10px;
+    top: 15px;
+  }
+
+  .navbar-nav {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .hero-section {
+    padding: 100px 0;
+  }
+
+  .hero-section .hero-title {
+    font-size: 54px;
+  }
+
+  .section-title {
+    font-size: 54px;
+    line-height: 64px;
+  }
+
+  .choose-plan-section,
+  .try-whitepace-section {
+    padding: 120px 0;
+  }
+
+  .try-whitepace-section .icon-grp img {
+    max-width: 40px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+
+  .footer-text,
+  footer .try-today-text {
+    margin: auto;
+  }
+
+  .section-title {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .try-whitepace-section .icon-grp img {
+    max-width: 35px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .choose-plan-card .card-body {
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 368px) {
+  .bottom-shape::after {
+    max-width: 150px;
+    right: 90px
+  }
+}
